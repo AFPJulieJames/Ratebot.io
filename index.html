@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Primary SEO -->
+<title>RateBot | Auto Transport Re-Quoting &amp; Customer Win-Back Tool</title>
+<meta name="description" content="RateBot re-prices every lane you've shipped at today's regional diesel rates, so auto transport brokers can re-quote dormant customers and win them back. Book a demo.">
+<link rel="canonical" href="https://ratebot.io/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0f2a43">
+<meta name="author" content="RateBot">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RateBot">
+<meta property="og:title" content="RateBot | Re-Quote Your Dormant Auto Transport Customers">
+<meta property="og:description" content="Re-price every lane you've shipped at today's diesel rates and win back the customers you already earned. Built for auto transport brokers.">
+<meta property="og:url" content="https://ratebot.io/">
+<meta property="og:image" content="https://ratebot.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RateBot | Re-Quote Your Dormant Auto Transport Customers">
+<meta name="twitter:description" content="Re-price every lane you've shipped at today's diesel rates and win back customers you already earned. Built for auto transport brokers.">
+<meta name="twitter:image" content="https://ratebot.io/og-image.png">
+
+<!-- Favicon (inline) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f2a43'/%3E%3Ctext x='16' y='22' font-family='Helvetica,Arial' font-size='17' font-weight='800' fill='%231f6f4f' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "RateBot",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "url": "https://ratebot.io/",
+  "description": "RateBot re-prices every lane an auto transport broker has shipped at today's regional diesel rates, then surfaces dormant customers with a ready-to-send re-quote so brokers can win the business back.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Founding-pilot onboarding for auto transport brokers." },
+  "audience": { "@type": "Audience", "audienceType": "Auto transport brokers" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RateBot",
+  "url": "https://ratebot.io/",
+  "logo": "https://ratebot.io/og-image.png",
+  "description": "Fuel-smart lane re-quoting and customer win-back software for auto transport brokers."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What is RateBot?", "acceptedAnswer": { "@type": "Answer", "text": "RateBot is a re-quoting tool for auto transport brokers. It takes your past order history and re-prices every lane you've shipped at today's regional diesel rates, then shows you which past customers to call and what to quote them." } },
+    { "@type": "Question", "name": "How does RateBot price a lane?", "acceptedAnswer": { "@type": "Answer", "text": "Each lane is matched to the diesel price of its EIA region on the day you shipped it and again today. The fuel change is shared across the carrier's full load and applied to your historical cost, then your target margin produces a customer-ready quote." } },
+    { "@type": "Question", "name": "Where does the diesel data come from?", "acceptedAnswer": { "@type": "Answer", "text": "Official U.S. Energy Information Administration on-highway diesel prices, broken out by region so California, Gulf, Midwest and West are priced separately rather than as one national number." } },
+    { "@type": "Question", "name": "Is my customer data private?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Your tool is built from your own order export and is private to you. Your data is never shared with other companies." } },
+    { "@type": "Question", "name": "Do I need to install anything?", "acceptedAnswer": { "@type": "Answer", "text": "No. RateBot is a web tool you open on any device. There is nothing to install." } },
+    { "@type": "Question", "name": "What do I need to send to get started?", "acceptedAnswer": { "@type": "Answer", "text": "Just the order export your transport management system already produces, with lanes, dates, costs and vehicle counts. We handle the rest." } }
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --navy:#0f2a43; --navy2:#163b5c; --green:#1f6f4f; --amber:#e0a106; --amber2:#f3c969;
+    --ink:#1c2630; --muted:#566472; --line:#e4e9ee; --bg:#ffffff; --soft:#f4f8f6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.55;background:var(--bg);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  a{color:inherit;text-decoration:none}
+  .btn{display:inline-block;background:var(--amber);color:var(--navy);font-weight:700;padding:13px 22px;border-radius:9px;font-size:15px;transition:transform .08s ease, box-shadow .15s ease;box-shadow:0 2px 0 rgba(0,0,0,.12)}
+  .btn:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(224,161,6,.35)}
+  .btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.45);box-shadow:none}
+  .btn.ghost:hover{background:rgba(255,255,255,.08);box-shadow:none}
+  .btn.dark{background:var(--navy);color:#fff;box-shadow:0 2px 0 rgba(0,0,0,.2)}
+
+  /* Header */
+  header.nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .logo{font-size:21px;font-weight:800;letter-spacing:-.4px;color:var(--navy)}
+  .logo span{color:var(--green)}
+  .nav-links{display:flex;align-items:center;gap:22px}
+  .nav-links a.lnk{font-size:14px;color:var(--muted);font-weight:600}
+  .nav-links a.lnk:hover{color:var(--navy)}
+  @media(max-width:680px){.nav-links a.lnk{display:none}}
+
+  /* Hero */
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 100%);color:#fff;position:relative;overflow:hidden}
+  .hero:after{content:"";position:absolute;top:-30%;right:-10%;width:520px;height:520px;background:radial-gradient(circle,rgba(31,111,79,.35),transparent 60%);pointer-events:none}
+  .hero .wrap{padding:72px 22px 78px;position:relative;z-index:1;max-width:880px;text-align:center}
+  .eyebrow{display:inline-block;font-size:12px;text-transform:uppercase;letter-spacing:.16em;font-weight:700;color:var(--amber2);background:rgba(224,161,6,.12);border:1px solid rgba(224,161,6,.3);padding:5px 13px;border-radius:30px;margin-bottom:22px}
+  h1{font-size:44px;line-height:1.08;font-weight:800;letter-spacing:-1px;margin-bottom:18px}
+  h1 .hl{color:var(--amber2)}
+  .hero p.lede{font-size:18px;line-height:1.55;color:#cdddea;max-width:640px;margin:0 auto 30px}
+  .hero-cta{display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
+  .trust{margin-top:26px;font-size:12.5px;color:#9fb6c8;letter-spacing:.01em}
+
+  /* Sections */
+  section{padding:66px 0}
+  .sec-head{text-align:center;max-width:680px;margin:0 auto 42px}
+  h2{font-size:30px;font-weight:800;letter-spacing:-.5px;color:var(--navy);line-height:1.15}
+  .sec-head p{color:var(--muted);font-size:16px;margin-top:12px}
+  .kick{font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:700;color:var(--green);margin-bottom:10px;display:block}
+
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media(max-width:760px){.cards{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:13px;padding:24px}
+  .card h3{font-size:17px;color:var(--navy);margin-bottom:8px;font-weight:700}
+  .card p{font-size:14.5px;color:var(--muted)}
+  .card .num{width:34px;height:34px;border-radius:9px;background:var(--soft);color:var(--green);font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:15px}
+
+  .alt{background:var(--soft)}
+  .proof-list{max-width:820px;margin:0 auto;display:grid;gap:14px}
+  .proof-item{display:flex;gap:15px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+  .proof-item .dot{flex:none;width:11px;height:11px;border-radius:3px;background:var(--green);margin-top:6px}
+  .proof-item h3{font-size:16px;color:var(--navy);margin-bottom:3px}
+  .proof-item p{font-size:14.5px;color:var(--muted)}
+
+  .stat{max-width:820px;margin:30px auto 0;background:var(--navy);color:#fff;border-radius:14px;padding:26px 30px;display:flex;align-items:center;gap:26px}
+  .stat .big{font-size:50px;font-weight:800;color:var(--amber2);line-height:1;white-space:nowrap}
+  .stat p{font-size:15px;color:#cdddea}
+  @media(max-width:600px){.stat{flex-direction:column;text-align:center;gap:12px}.stat .big{font-size:42px}}
+
+  /* Pricing */
+  .price-box{max-width:620px;margin:0 auto;background:#fff;border:2px solid var(--navy);border-radius:16px;padding:34px;text-align:center}
+  .price-box .tag{display:inline-block;background:var(--amber);color:var(--navy);font-weight:800;font-size:12px;padding:5px 13px;border-radius:20px;letter-spacing:.04em;margin-bottom:16px}
+  .price-box h3{font-size:23px;color:var(--navy);margin-bottom:10px}
+  .price-box p{color:var(--muted);font-size:15px;max-width:460px;margin:0 auto 22px}
+  .price-box ul{list-style:none;text-align:left;max-width:420px;margin:0 auto 24px}
+  .price-box li{font-size:14.5px;color:var(--ink);padding:7px 0 7px 26px;position:relative}
+  .price-box li:before{content:"";position:absolute;left:0;top:13px;width:11px;height:6px;border-left:2px solid var(--green);border-bottom:2px solid var(--green);transform:rotate(-45deg)}
+
+  /* FAQ */
+  .faq{max-width:760px;margin:0 auto}
+  details{background:#fff;border:1px solid var(--line);border-radius:11px;padding:0 20px;margin-bottom:11px}
+  details summary{cursor:pointer;list-style:none;padding:17px 0;font-weight:700;color:var(--navy);font-size:16px;display:flex;justify-content:space-between;align-items:center}
+  details summary::-webkit-details-marker{display:none}
+  details summary:after{content:"+";color:var(--green);font-size:22px;font-weight:700;margin-left:14px}
+  details[open] summary:after{content:"\2212"}
+  details p{padding:0 0 18px;color:var(--muted);font-size:14.5px}
+
+  /* Final CTA */
+  .final{background:linear-gradient(160deg,var(--navy),var(--green));color:#fff;text-align:center}
+  .final .wrap{padding:64px 22px}
+  .final h2{color:#fff}
+  .final p{color:#d6e6dd;font-size:17px;max-width:560px;margin:14px auto 28px}
+
+  footer.site{background:#0b1c2d;color:#90a6b8;font-size:13px;padding:34px 0}
+  footer.site .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}
+  footer.site .logo{color:#fff;font-size:18px}
+  footer.site a{color:#cdddea}
+  footer.site .legal{font-size:11.5px;color:#67809a;max-width:520px}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <div class="logo">Rate<span>Bot</span></div>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="lnk" href="#how">How it works</a>
+      <a class="lnk" href="#why">Why it holds up</a>
+      <a class="lnk" href="#pricing">Pricing</a>
+      <a class="lnk" href="#faq">FAQ</a>
+      <a class="btn dark" href="https://calendly.com/your-link" rel="noopener">Book a demo</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-h1">
+    <div class="wrap">
+      <span class="eyebrow">For auto transport brokers</span>
+      <h1 id="hero-h1">Re-quote your dormant customers at <span class="hl">today's diesel rates</span>.</h1>
+      <p class="lede">RateBot turns your past order history into a live re-quoting tool. Re-price every lane you've shipped at current regional diesel, then win back the customers you already earned, before someone else does.</p>
+      <div class="hero-cta">
+        <a class="btn" href="https://calendly.com/your-link" rel="noopener">Book a 15-minute demo</a>
+        <a class="btn ghost" href="#how">See how it works</a>
+      </div>
+      <div class="trust">Built on official U.S. EIA regional diesel data &middot; Validated against live market quotes</div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section id="problem">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kick">The dormant-book problem</span>
+        <h2>Your warmest leads are customers you've already shipped for.</h2>
+        <p>Most of them have gone quiet, and the rates you quoted them last year no longer hold up.</p>
+      </div>
+      <div class="cards">
+        <div class="card"><h3>The book goes cold</h3><p>Past customers stop calling, and you have no system to spot them or win them back.</p></div>
+        <div class="card"><h3>Old rates are dead</h3><p>Diesel has swung to multi-year highs, so last year's quote is meaningless and you can't defend it.</p></div>
+        <div class="card"><h3>Re-pricing is slow</h3><p>Working out a fresh, fuel-aware rate for every old lane by hand is hours nobody has.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kick">How RateBot works</span>
+        <h2>From order export to your next sales call in three steps.</h2>
+      </div>
+      <div class="cards">
+        <div class="card"><div class="num">1</div><h3>Send your orders</h3><p>Email the order export your transport management system already produces. Your data stays yours.</p></div>
+        <div class="card"><div class="num">2</div><h3>We build your tool</h3><p>Your private re-quoting tool is ready in days. Nothing to install, opens on any device.</p></div>
+        <div class="card"><div class="num">3</div><h3>Re-quote and call</h3><p>Sort by your most valuable lapsed accounts, copy the ready-made pitch, and start dialing.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY IT HOLDS UP -->
+  <section id="why">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kick">Why the rates hold up</span>
+        <h2>Numbers a customer can't argue with.</h2>
+        <p>RateBot isn't a guess. Every quote is grounded in real fuel data and validated two ways.</p>
+      </div>
+      <div class="proof-list">
+        <div class="proof-item"><div class="dot"></div><div><h3>Official regional diesel data</h3><p>Prices come from the U.S. Energy Information Administration, broken out by region so California, Gulf, Midwest and West are priced separately, not as one national average.</p></div></div>
+        <div class="proof-item"><div class="dot"></div><div><h3>Real load math</h3><p>Multi-vehicle orders are counted by VIN, and the fuel increase is shared across the carrier's full load, the way pricing actually works on the road.</p></div></div>
+        <div class="proof-item"><div class="dot"></div><div><h3>Validated two ways</h3><p>Quotes are checked against live broker market rates and against each company's own historical prices, so they survive a customer's pushback.</p></div></div>
+      </div>
+      <div class="stat">
+        <div class="big">150+</div>
+        <p>In one 18,700-order book we analyzed, 150+ high-value customers had gone silent for 12 months or more. That's six figures of lapsed revenue sitting idle, waiting for a reason to call.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kick">Founding-pilot pricing</span>
+        <h2>Done for you, built from your own data.</h2>
+      </div>
+      <div class="price-box">
+        <span class="tag">Limited founding spots</span>
+        <h3>Flat-rate onboarding</h3>
+        <p>We're taking on a small number of brokers as founding pilots. You send your export, we build and deliver your private tool.</p>
+        <ul>
+          <li>Your own customers and lanes, re-priced for today</li>
+          <li>Private to you, your data is never shared</li>
+          <li>Opens on any device, nothing to install</li>
+          <li>Weekly diesel refresh so the numbers stay current</li>
+        </ul>
+        <a class="btn dark" href="https://calendly.com/your-link" rel="noopener">Book a 15-minute demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kick">FAQ</span>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq">
+        <details open><summary>What is RateBot?</summary><p>RateBot is a re-quoting tool for auto transport brokers. It takes your past order history and re-prices every lane you've shipped at today's regional diesel rates, then shows you which past customers to call and what to quote them.</p></details>
+        <details><summary>How does RateBot price a lane?</summary><p>Each lane is matched to the diesel price of its EIA region on the day you shipped it and again today. The fuel change is shared across the carrier's full load and applied to your historical cost, then your target margin produces a customer-ready quote.</p></details>
+        <details><summary>Where does the diesel data come from?</summary><p>Official U.S. Energy Information Administration on-highway diesel prices, broken out by region so California, Gulf, Midwest and West are priced separately rather than as one national number.</p></details>
+        <details><summary>Is my customer data private?</summary><p>Yes. Your tool is built from your own order export and is private to you. Your data is never shared with other companies.</p></details>
+        <details><summary>Do I need to install anything?</summary><p>No. RateBot is a web tool you open on any device. There is nothing to install and no app to download.</p></details>
+        <details><summary>What do I need to send to get started?</summary><p>Just the order export your transport management system already produces, with lanes, dates, costs and vehicle counts. We handle the cleanup and the rest.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final" aria-labelledby="final-h2">
+    <div class="wrap">
+      <h2 id="final-h2">Your old customers are worth more than you think.</h2>
+      <p>See your own dormant book re-priced for today's market in a 15-minute demo.</p>
+      <a class="btn" href="https://calendly.com/your-link" rel="noopener">Book a 15-minute demo</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <div class="logo">Rate<span style="color:#5fd39e">Bot</span></div>
+      <div style="margin-top:6px">Fuel-smart lane re-quoting for auto transport brokers.</div>
+    </div>
+    <div style="text-align:right">
+      <div><a href="https://calendly.com/your-link" rel="noopener">Book a demo</a> &nbsp;&middot;&nbsp; <a href="mailto:you@ratebot.io">you@ratebot.io</a></div>
+      <div class="legal" style="margin-top:8px">Diesel data: U.S. Energy Information Administration. &copy; 2026 RateBot. ratebot.io</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
