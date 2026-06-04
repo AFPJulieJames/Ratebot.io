@@ -162,6 +162,15 @@
   footer.site .logo{color:#fff;font-size:18px}
   footer.site a{color:#cdddea}
   footer.site .legal{font-size:11.5px;color:#67809a;max-width:520px}
+
+  /* Demo teaser */
+  .demo-sec{background:var(--soft)}
+  .frame{max-width:940px;margin:0 auto;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 26px 64px rgba(15,42,67,.22);position:relative;background:#0f1620}
+  .frame .bar{height:34px;background:#0b121b;display:flex;align-items:center;gap:7px;padding:0 14px}
+  .frame .bar i{width:11px;height:11px;border-radius:50%;display:inline-block}
+  .frame img{display:block;width:100%;height:auto}
+  .frame .fade{position:absolute;left:0;right:0;bottom:0;height:190px;background:linear-gradient(to bottom,rgba(15,22,32,0),#0f1620 80%);display:flex;align-items:flex-end;justify-content:center;padding-bottom:26px}
+  .demo-note{text-align:center;color:var(--muted);font-size:13px;margin-top:18px}
 </style>
 </head>
 <body>
@@ -171,6 +180,7 @@
     <div class="logo">Rate<span>Bot</span></div>
     <nav class="nav-links" aria-label="Primary">
       <a class="lnk" href="#how">How it works</a>
+      <a class="lnk" href="#demo">See it</a>
       <a class="lnk" href="#why">Why it holds up</a>
       <a class="lnk" href="#pricing">Pricing</a>
       <a class="lnk" href="#faq">FAQ</a>
@@ -222,6 +232,23 @@
         <div class="card"><div class="num">2</div><h3>We build your tool</h3><p>Your private re-quoting tool is ready in days. Nothing to install, opens on any device.</p></div>
         <div class="card"><div class="num">3</div><h3>Re-quote and call</h3><p>Sort by your most valuable lapsed accounts, copy the ready-made pitch, and start dialing.</p></div>
       </div>
+    </div>
+  </section>
+
+  <!-- SEE IT IN ACTION -->
+  <section id="demo" class="demo-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kick">See it in action</span>
+        <h2>A live re-quoting board, built from your book.</h2>
+        <p>Pick a dormant customer and every lane they shipped is re-priced for today's regional diesel, with a quote ready to send. Below is a sample. Your version runs on your own customers.</p>
+      </div>
+      <div class="frame">
+        <div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div>
+        <img src="tool-preview.png" alt="RateBot re-quoting board showing a dormant auto transport customer's lanes re-priced at today's regional diesel rates, with quote per order and per vehicle" width="1725" height="950">
+        <div class="fade"><a class="btn" href="https://calendly.com/julie-ratebot" rel="noopener">Book a demo to see your numbers</a></div>
+      </div>
+      <p class="demo-note">Sample data shown. Live demos run on your real order history.</p>
     </div>
   </section>
 
