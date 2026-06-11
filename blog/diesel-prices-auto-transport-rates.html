@@ -13,53 +13,64 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How Diesel Prices Change Your Auto Transport Rates","description":"Diesel is the biggest variable cost in auto transport. Here is how fuel moves lane rates, why regional diesel matters, and how to re-quote an old lane accurately.","datePublished":"2026-06-04","author":{"@type":"Organization","name":"RateBot"},"publisher":{"@type":"Organization","name":"RateBot"},"mainEntityOfPage":"https://ratebot.io/blog/diesel-prices-auto-transport-rates.html"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should I use diesel or gas prices for auto transport rates?","acceptedAnswer":{"@type":"Answer","text":"Diesel. Car carriers run on diesel, so the diesel price is the relevant number. Gasoline prices, including the figure you often see quoted in the news, are the wrong input for a truck rate."}},{"@type":"Question","name":"How often do auto transport rates change with fuel?","acceptedAnswer":{"@type":"Answer","text":"Diesel is reported weekly and can move meaningfully month to month. For re-quoting old lanes, monthly regional diesel is granular enough to map the day you shipped against today."}}]}</script>
 <style>*{margin:0;padding:0;box-sizing:border-box}
-:root{--navy:#0f2a43;--green:#1f6f4f;--amber:#e0a106;--ink:#1c2630;--muted:#566472;--line:#e4e9ee;--soft:#f4f8f6}
+:root{--navy:#0f2a43;--navy2:#163b5c;--green:#1f6f4f;--mint:#5fd39e;--amber:#e0a106;--gold:#f3c969;--ink:#1c2630;--muted:#566472;--line:#e2e8ef;--soft:#f3f7f5}
 html{scroll-behavior:smooth}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.62;background:#fff;-webkit-font-smoothing:antialiased}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.66;background:#fff;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:rgba(95,211,158,.35)}
 a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
 .wrap{max-width:760px;margin:0 auto;padding:0 22px}
 .wrapwide{max-width:1000px;margin:0 auto;padding:0 22px}
-header.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav .row{display:flex;align-items:center;justify-content:space-between;height:60px;max-width:1000px;margin:0 auto;padding:0 22px}
-.logo{font-size:20px;font-weight:800;letter-spacing:-.4px;color:var(--navy)}.logo span{color:var(--green)}
-.nav a.btn{background:var(--navy);color:#fff;font-weight:700;padding:9px 16px;border-radius:8px;font-size:14px}
-.nav a.btn:hover{text-decoration:none}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(15,42,67,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav .row{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:1000px;margin:0 auto;padding:0 22px}
+.logo{font-size:21px;font-weight:800;letter-spacing:-.45px;color:#fff}.logo span{color:var(--mint)}
+.nav a.btn{background:linear-gradient(135deg,var(--gold),var(--amber));color:var(--navy);font-weight:800;padding:10px 18px;border-radius:10px;font-size:14px;box-shadow:0 3px 12px rgba(224,161,6,.35),inset 0 1px 0 rgba(255,255,255,.45);transition:transform .12s ease,box-shadow .18s ease}
+.nav a.btn:hover{text-decoration:none;transform:translateY(-1px);box-shadow:0 6px 18px rgba(224,161,6,.45),inset 0 1px 0 rgba(255,255,255,.45)}
 .navlinks{display:flex;align-items:center;gap:22px}
-.navlinks a.nl{font-size:14px;color:var(--muted);font-weight:600}
-.navlinks a.nl:hover{color:var(--navy);text-decoration:none}
+.navlinks a.nl{font-size:13.5px;color:rgba(255,255,255,.66);font-weight:600;transition:color .15s}
+.navlinks a.nl:hover{color:#fff;text-decoration:none}
 @media(max-width:560px){.navlinks a.nl{display:none}}
-.crumb{font-size:13px;color:var(--muted);padding:26px 0 0}
-article h1{font-size:35px;line-height:1.14;letter-spacing:-.6px;color:var(--navy);margin:14px 0 10px;font-weight:800}
-.meta{font-size:13.5px;color:var(--muted);margin-bottom:8px}
-.lede{font-size:18px;color:#3e4c5a;margin:14px 0 26px}
-article h2{font-size:23px;color:var(--navy);margin:34px 0 12px;letter-spacing:-.3px}
-article p{margin:0 0 16px;font-size:16.5px}
-article ul{margin:0 0 16px 22px}article li{margin-bottom:8px;font-size:16.5px}
-.callout{background:var(--soft);border:1px solid var(--line);border-left:3px solid var(--amber);border-radius:10px;padding:18px 20px;margin:26px 0}
+.crumb{font-size:13px;color:var(--muted);padding:30px 0 0}
+.crumb a{color:var(--muted);font-weight:600}.crumb a:hover{color:var(--green)}
+article h1{font-size:37px;line-height:1.12;letter-spacing:-.025em;color:var(--navy);margin:16px 0 10px;font-weight:850}
+.meta{font-size:12.5px;color:var(--muted);margin-bottom:8px;text-transform:uppercase;letter-spacing:.08em;font-weight:650}
+.lede{font-size:19px;line-height:1.55;color:#3e4c5a;margin:16px 0 30px;padding-left:18px;border-left:3px solid var(--mint)}
+article h2{font-size:24px;color:var(--navy);margin:38px 0 14px;letter-spacing:-.015em;font-weight:800}
+article p{margin:0 0 17px;font-size:16.5px}
+article ul{margin:0 0 17px 22px}article li{margin-bottom:8px;font-size:16.5px}
+.callout{background:linear-gradient(135deg,#fdf9ef,#faf3df);border:1px solid #f0e3c2;border-left:4px solid var(--amber);border-radius:12px;padding:20px 22px;margin:28px 0}
 .callout p:last-child{margin:0}
-.faq h2{margin-top:38px}
-details{border-bottom:1px solid var(--line);padding:14px 0}
-details summary{cursor:pointer;font-weight:700;color:var(--navy);font-size:17px;list-style:none}
+.faq h2{margin-top:42px}
+details{background:#fff;border:1px solid var(--line);border-radius:13px;padding:0 20px;margin-bottom:12px;box-shadow:0 1px 2px rgba(15,42,67,.06),0 2px 10px rgba(15,42,67,.05);transition:border-color .15s}
+details:hover{border-color:#c8d4de}
+details[open]{border-color:rgba(31,111,79,.35)}
+details summary{cursor:pointer;font-weight:750;color:var(--navy);font-size:16.5px;list-style:none;padding:16px 0;display:flex;justify-content:space-between;align-items:center}
 details summary::-webkit-details-marker{display:none}
-details p{margin-top:10px;color:var(--muted)}
-.cta{background:linear-gradient(160deg,var(--navy),var(--green));color:#fff;border-radius:14px;padding:30px;text-align:center;margin:40px 0}
-.cta h3{font-size:22px;margin-bottom:8px}.cta p{color:#d6e6dd;margin-bottom:18px}
-.cta a{display:inline-block;background:var(--amber);color:var(--navy);font-weight:800;padding:12px 22px;border-radius:9px}
-.cta a:hover{text-decoration:none}
-.related{border-top:1px solid var(--line);margin-top:36px;padding-top:22px}
-.related h3{font-size:14px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:12px}
-.related a{display:block;margin-bottom:8px;font-weight:600}
-footer.site{background:#0b1c2d;color:#90a6b8;font-size:13px;padding:30px 0;margin-top:50px}
+details summary:after{content:"+";color:var(--mint);font-size:22px;font-weight:700;margin-left:14px;line-height:1}
+details[open] summary:after{content:"\2212";color:var(--green)}
+details p{margin:0;padding:0 0 18px;color:var(--muted)}
+.cta{background:linear-gradient(150deg,var(--navy) 0%,var(--navy2) 45%,var(--green) 100%);color:#fff;border-radius:18px;padding:38px 30px;text-align:center;margin:44px 0;position:relative;overflow:hidden;box-shadow:0 4px 12px rgba(15,42,67,.10),0 28px 64px rgba(15,42,67,.16)}
+.cta:before{content:"";position:absolute;inset:0;background:radial-gradient(420px 180px at 85% -10%,rgba(95,211,158,.20),transparent 60%);pointer-events:none}
+.cta h3{font-size:23px;margin-bottom:8px;position:relative;letter-spacing:-.015em}.cta p{color:#d2e5da;margin-bottom:20px;position:relative}
+.cta a{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--amber));color:var(--navy);font-weight:800;padding:13px 24px;border-radius:11px;position:relative;box-shadow:0 4px 16px rgba(224,161,6,.32),inset 0 1px 0 rgba(255,255,255,.45);transition:transform .12s ease,box-shadow .18s ease}
+.cta a:hover{text-decoration:none;transform:translateY(-2px);box-shadow:0 8px 24px rgba(224,161,6,.42),inset 0 1px 0 rgba(255,255,255,.45)}
+.related{border-top:1px solid var(--line);margin-top:40px;padding-top:24px}
+.related h3{font-size:12px;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin-bottom:14px;font-weight:800}
+.related a{display:block;margin-bottom:10px;font-weight:650;color:var(--navy)}
+.related a:hover{color:var(--green)}
+footer.site{background:#0b1c2d;color:#8aa1b4;font-size:13px;padding:36px 0;margin-top:60px;border-top:1px solid rgba(255,255,255,.05)}
 footer.site .row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;max-width:1000px;margin:0 auto;padding:0 22px}
-footer.site .logo{color:#fff}footer.site a{color:#cdddea}
-.bloghead{background:linear-gradient(160deg,var(--navy),#163b5c);color:#fff;padding:54px 0 46px;text-align:center}
-.bloghead h1{color:#fff;font-size:38px;margin-bottom:10px}.bloghead p{color:#cdddea;font-size:17px}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:44px 0}
-@media(max-width:720px){.cards{grid-template-columns:1fr}article h1{font-size:28px}}
-.pcard{border:1px solid var(--line);border-radius:13px;padding:24px;transition:box-shadow .15s,transform .08s}
-.pcard:hover{box-shadow:0 14px 36px rgba(15,42,67,.12);transform:translateY(-2px);text-decoration:none}
-.pcard .tag{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--green);font-weight:700}
-.pcard h2{font-size:20px;color:var(--navy);margin:8px 0}.pcard p{color:var(--muted);font-size:15px}</style></head><body>
+footer.site .logo{color:#fff}footer.site a{color:#cdddea}footer.site a:hover{color:var(--mint);text-decoration:none}
+.bloghead{background:linear-gradient(150deg,var(--navy) 0%,var(--navy2) 58%,#1b4a73 100%);color:#fff;padding:64px 0 56px;text-align:center;position:relative;overflow:hidden}
+.bloghead:before{content:"";position:absolute;inset:0;background:radial-gradient(640px 260px at 85% -5%,rgba(95,211,158,.20),transparent 62%),radial-gradient(420px 220px at 8% 110%,rgba(243,201,105,.12),transparent 60%);pointer-events:none}
+.bloghead h1{color:#fff;font-size:42px;margin-bottom:12px;font-weight:850;letter-spacing:-.025em;position:relative}.bloghead p{color:#c6d8e7;font-size:17px;position:relative}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:48px 0}
+@media(max-width:720px){.cards{grid-template-columns:1fr}article h1{font-size:29px}}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px;position:relative;overflow:hidden;box-shadow:0 1px 2px rgba(15,42,67,.06),0 2px 10px rgba(15,42,67,.05);transition:box-shadow .2s ease,transform .15s ease}
+.pcard:before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--mint),var(--green));opacity:0;transition:opacity .2s}
+.pcard:hover{box-shadow:0 2px 6px rgba(15,42,67,.07),0 18px 44px rgba(15,42,67,.13);transform:translateY(-3px);text-decoration:none}
+.pcard:hover:before{opacity:1}
+.pcard .tag{display:inline-block;font-size:10.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--green);font-weight:800;background:rgba(95,211,158,.13);border:1px solid rgba(31,111,79,.20);padding:4px 11px;border-radius:20px}
+.pcard h2{font-size:20px;color:var(--navy);margin:12px 0 8px;letter-spacing:-.01em;font-weight:800}.pcard p{color:var(--muted);font-size:14.5px}@media (prefers-reduced-motion: no-preference){.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s cubic-bezier(.2,.7,.2,1),transform .65s cubic-bezier(.2,.7,.2,1)}.reveal.in{opacity:1;transform:none}.cards .reveal:nth-child(2){transition-delay:.08s}.cards .reveal:nth-child(3){transition-delay:.16s}}</style></head><body>
 <header class="nav"><div class="row">
 <a class="logo" href="/">Rate<span>Bot</span></a>
 <div class="navlinks">
@@ -100,4 +111,4 @@ footer.site .logo{color:#fff}footer.site a{color:#cdddea}
 <div style="text-align:right"><a href="/">Home</a> &middot; <a href="/blog/">Blog</a> &middot; <a href="https://calendly.com/julie-ratebot" rel="noopener">Book a demo</a>
 <div style="margin-top:8px;font-size:11.5px;color:#67809a">Diesel data: U.S. Energy Information Administration. &copy; 2026 RateBot.</div></div>
 </div></footer>
-</body></html>
+<script>(function(){if(window.matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;var sel='article > h2, article > .cta, article > .faq, article > .related, .pcard, .mid > div > *';var t=[].slice.call(document.querySelectorAll(sel));t.forEach(function(e){e.classList.add('reveal');});var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});t.forEach(function(e){io.observe(e);});})();</script></body></html>
