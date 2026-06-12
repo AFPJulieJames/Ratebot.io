@@ -1,0 +1,136 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Analytics (GA4). Measurement ID G-X700QG2RBX -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X700QG2RBX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-X700QG2RBX');</script>
+<title>How to Price an Auto Transport Lane: A Broker's Complete Method | RateBot</title>
+<meta name="description" content="A working broker's method for pricing an auto transport lane: real load math, regional diesel, margin targeting, and how to validate a quote so it survives a customer's pushback.">
+<link rel="canonical" href="https://ratebot.io/blog/how-to-price-an-auto-transport-lane.html">
+<meta property="og:type" content="article"><meta property="og:title" content="How to Price an Auto Transport Lane: A Broker's Complete Method">
+<meta property="og:description" content="A working broker's method for pricing an auto transport lane: load math, regional diesel, margin targeting, and validating a quote so it holds up."><meta property="og:url" content="https://ratebot.io/blog/how-to-price-an-auto-transport-lane.html">
+<meta property="og:image" content="https://ratebot.io/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to Price an Auto Transport Lane: A Broker's Complete Method","description":"A working broker's method for pricing an auto transport lane: real load math, regional diesel, margin targeting, and how to validate a quote so it survives a customer's pushback.","datePublished":"2026-06-11","author":{"@type":"Person","name":"Julie James","jobTitle":"Founder, RateBot","description":"Auto transport broker with 11 years in the industry and 20,000+ vehicles moved."},"publisher":{"@type":"Organization","name":"RateBot"},"mainEntityOfPage":"https://ratebot.io/blog/how-to-price-an-auto-transport-lane.html"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do auto transport brokers price a lane?","acceptedAnswer":{"@type":"Answer","text":"Start from a real cost for the lane, usually your own historical carrier cost or the current market rate, adjust it for today's regional diesel with the fuel shared across the carrier's full load, then apply your target margin to get the customer price. Validate the result against a live carrier rate and your own history before you send it."}},{"@type":"Question","name":"What margin should an auto transport broker target?","acceptedAnswer":{"@type":"Answer","text":"It varies by lane and season, but a common working target is around a 35 percent spread, meaning the carrier buys at roughly 65 percent of the customer price. Treat that as a target, not a guarantee. On tight lanes the live carrier rate can run higher, which is exactly when you cross-check the market before quoting."}},{"@type":"Question","name":"Should I use national or regional diesel to price a lane?","acceptedAnswer":{"@type":"Answer","text":"Regional. Diesel is not one national number. California routinely runs well above the Gulf Coast, so pricing a West Coast lane off a national average understates the fuel cost every time. Price each lane on the diesel of the region it originates in."}}]}</script>
+<style>*{margin:0;padding:0;box-sizing:border-box}
+:root{--navy:#0f2a43;--navy2:#163b5c;--green:#1f6f4f;--mint:#5fd39e;--amber:#e0a106;--gold:#f3c969;--ink:#1c2630;--muted:#566472;--line:#e2e8ef;--soft:#f3f7f5}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.66;background:#fff;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:rgba(95,211,158,.35)}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+.wrapwide{max-width:1000px;margin:0 auto;padding:0 22px}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(15,42,67,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav .row{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:1000px;margin:0 auto;padding:0 22px}
+.logo{font-size:21px;font-weight:800;letter-spacing:-.45px;color:#fff}.logo span{color:var(--mint)}
+.nav a.btn{background:linear-gradient(135deg,var(--gold),var(--amber));color:var(--navy);font-weight:800;padding:10px 18px;border-radius:10px;font-size:14px;box-shadow:0 3px 12px rgba(224,161,6,.35),inset 0 1px 0 rgba(255,255,255,.45);transition:transform .12s ease,box-shadow .18s ease}
+.nav a.btn:hover{text-decoration:none;transform:translateY(-1px);box-shadow:0 6px 18px rgba(224,161,6,.45),inset 0 1px 0 rgba(255,255,255,.45)}
+.navlinks{display:flex;align-items:center;gap:22px}
+.navlinks a.nl{font-size:13.5px;color:rgba(255,255,255,.66);font-weight:600;transition:color .15s}
+.navlinks a.nl:hover{color:#fff;text-decoration:none}
+@media(max-width:560px){.navlinks a.nl{display:none}}
+.crumb{font-size:13px;color:var(--muted);padding:30px 0 0}
+.crumb a{color:var(--muted);font-weight:600}.crumb a:hover{color:var(--green)}
+article h1{font-size:37px;line-height:1.12;letter-spacing:-.025em;color:var(--navy);margin:16px 0 10px;font-weight:850}
+.meta{font-size:12.5px;color:var(--muted);margin-bottom:8px;text-transform:uppercase;letter-spacing:.08em;font-weight:650}
+.lede{font-size:19px;line-height:1.55;color:#3e4c5a;margin:16px 0 30px;padding-left:18px;border-left:3px solid var(--mint)}
+article h2{font-size:24px;color:var(--navy);margin:38px 0 14px;letter-spacing:-.015em;font-weight:800}
+article p{margin:0 0 17px;font-size:16.5px}
+article ul{margin:0 0 17px 22px}article li{margin-bottom:8px;font-size:16.5px}
+.callout{background:linear-gradient(135deg,#fdf9ef,#faf3df);border:1px solid #f0e3c2;border-left:4px solid var(--amber);border-radius:12px;padding:20px 22px;margin:28px 0}
+.callout p:last-child{margin:0}
+.byline{display:flex;align-items:center;gap:12px;margin:0 0 26px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.byline .ini{flex:none;width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--green));color:#fff;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;letter-spacing:.02em}
+.byline .who{font-size:14px;color:var(--ink);font-weight:700}.byline .who span{display:block;font-weight:500;color:var(--muted);font-size:12.5px;margin-top:1px}
+.author{display:flex;gap:15px;align-items:flex-start;background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:40px 0 0}
+.author .ini{flex:none;width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--green));color:#fff;font-weight:800;font-size:18px;display:flex;align-items:center;justify-content:center}
+.author h4{font-size:15px;color:var(--navy);margin-bottom:4px}.author p{font-size:14px;color:var(--muted);margin:0}
+.faq h2{margin-top:42px}
+details{background:#fff;border:1px solid var(--line);border-radius:13px;padding:0 20px;margin-bottom:12px;box-shadow:0 1px 2px rgba(15,42,67,.06),0 2px 10px rgba(15,42,67,.05);transition:border-color .15s}
+details:hover{border-color:#c8d4de}
+details[open]{border-color:rgba(31,111,79,.35)}
+details summary{cursor:pointer;font-weight:750;color:var(--navy);font-size:16.5px;list-style:none;padding:16px 0;display:flex;justify-content:space-between;align-items:center}
+details summary::-webkit-details-marker{display:none}
+details summary:after{content:"+";color:var(--mint);font-size:22px;font-weight:700;margin-left:14px;line-height:1}
+details[open] summary:after{content:"\2212";color:var(--green)}
+details p{margin:0;padding:0 0 18px;color:var(--muted)}
+.cta{background:linear-gradient(150deg,var(--navy) 0%,var(--navy2) 45%,var(--green) 100%);color:#fff;border-radius:18px;padding:38px 30px;text-align:center;margin:44px 0;position:relative;overflow:hidden;box-shadow:0 4px 12px rgba(15,42,67,.10),0 28px 64px rgba(15,42,67,.16)}
+.cta:before{content:"";position:absolute;inset:0;background:radial-gradient(420px 180px at 85% -10%,rgba(95,211,158,.20),transparent 60%);pointer-events:none}
+.cta h3{font-size:23px;margin-bottom:8px;position:relative;letter-spacing:-.015em}.cta p{color:#d2e5da;margin-bottom:20px;position:relative}
+.cta a{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--amber));color:var(--navy);font-weight:800;padding:13px 24px;border-radius:11px;position:relative;box-shadow:0 4px 16px rgba(224,161,6,.32),inset 0 1px 0 rgba(255,255,255,.45);transition:transform .12s ease,box-shadow .18s ease}
+.cta a:hover{text-decoration:none;transform:translateY(-2px);box-shadow:0 8px 24px rgba(224,161,6,.42),inset 0 1px 0 rgba(255,255,255,.45)}
+.related{border-top:1px solid var(--line);margin-top:40px;padding-top:24px}
+.related h3{font-size:12px;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin-bottom:14px;font-weight:800}
+.related a{display:block;margin-bottom:10px;font-weight:650;color:var(--navy)}
+.related a:hover{color:var(--green)}
+footer.site{background:#0b1c2d;color:#8aa1b4;font-size:13px;padding:36px 0;margin-top:60px;border-top:1px solid rgba(255,255,255,.05)}
+footer.site .row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;max-width:1000px;margin:0 auto;padding:0 22px}
+footer.site .logo{color:#fff}footer.site a{color:#cdddea}footer.site a:hover{color:var(--mint);text-decoration:none}
+@media(max-width:720px){article h1{font-size:29px}}
+@media (prefers-reduced-motion: no-preference){.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s cubic-bezier(.2,.7,.2,1),transform .65s cubic-bezier(.2,.7,.2,1)}.reveal.in{opacity:1;transform:none}}</style></head><body>
+<header class="nav"><div class="row">
+<a class="logo" href="/">Rate<span>Bot</span></a>
+<div class="navlinks">
+<a class="nl" href="/">Home</a>
+<a class="nl" href="/blog/">Blog</a>
+<a class="btn" href="https://calendly.com/julie-ratebot" rel="noopener">Book a demo</a>
+</div>
+</div></header>
+<div class="wrap">
+<div class="crumb"><a href="/">Home</a> / <a href="/blog/">Blog</a></div>
+<article>
+<h1>How to Price an Auto Transport Lane: A Broker's Complete Method</h1>
+<div class="meta">9 min read &middot; Updated June 2026</div>
+<div class="byline"><div class="ini">JJ</div><div class="who">Julie James<span>Founder, RateBot &middot; 11 years in auto transport, 20,000+ vehicles moved</span></div></div>
+<p class="lede">Most brokers price a lane on feel and a stale spreadsheet. Here is the method I actually use, built from years of running real orders, so your number holds up when the customer pushes back.</p>
+
+<p>In eleven years and more than twenty thousand vehicles, I have priced lanes every way there is: off a gut number, off last year's quote, off whatever the load board was showing that morning. Most of those methods quietly cost me money. The one that works is boring and repeatable, and it comes down to four steps. Start from a real cost, adjust it for today's fuel correctly, apply a margin you can defend, and check it against the market before you hit send.</p>
+
+<h2>Step 1: Start from a real cost, not a guess</h2>
+<p>The biggest mistake I see is brokers building a quote up from nothing, a per-mile figure they half remember plus a cushion. That is how you end up either underwater on a tight lane or way over market on an easy one.</p>
+<p>Anchor instead to something real. The best anchor is your own history: what a carrier actually accepted to run that lane, or one close to it. If you have moved it before, that number already has the truck, the driver, insurance, and overhead baked in. If you have never run the lane, use the current market rate from where carriers and brokers actually transact as your starting point. Either way you are starting from a price the road has already agreed to, not a number you invented.</p>
+
+<h2>Step 2: Adjust for fuel, and share it across the load</h2>
+<p>Diesel is the cost that swings. Most of a carrier's rate is stable, but fuel can move by dollars a gallon inside a single year, which is why a quote from eighteen months ago is almost never right today. Two rules make the fuel adjustment accurate.</p>
+<p>First, use <strong>regional</strong> diesel, not national. Diesel is not one number. California runs well above the Gulf Coast, sometimes by a wide margin. Price a Los Angeles lane off a national average and you understate the fuel cost every single time. Match each lane to the diesel of the region it starts in. The EIA publishes those regional numbers weekly, for free.</p>
+<p>Second, and this is the one that burns people: <strong>share the fuel increase across the whole load.</strong> A car carrier hauls up to nine or ten vehicles, and the trip's fuel is split across all of them. The extra fuel cost for any one vehicle is the trip's increase divided by the cars on the truck. Charge a single vehicle for a whole truck's fuel jump and on a long lane you will balloon the quote far above what the market will bear. I have watched brokers lose a load they should have won on exactly that error.</p>
+
+<div class="callout"><p><strong>The fuel adjustment in one line:</strong> take the share of the load (one vehicle divided by cars on the truck), multiply by miles divided by the truck's miles per gallon, multiply by the change in regional diesel since you last ran it. Add that to your anchor cost. That is the fuel-corrected cost, per vehicle.</p></div>
+
+<h2>Step 3: Apply a margin you can actually defend</h2>
+<p>Now you have a defensible cost. The customer price is that cost plus your margin. The question every broker asks is what the margin should be.</p>
+<p>Across my own book, carriers bought at roughly 65 percent of the customer price, which is about a 35 percent spread. That is a reasonable working target, but treat it as a target, not a law. It is the number you aim for, not a promise the market makes you. On a tight or out-of-the-way lane, the live carrier rate can run higher than your target buy, and if you price as if it will not, you will book a load you cannot cover at that number.</p>
+<p>So set the target margin, calculate the customer price from it, but always hold the cost side loosely until you have done step four.</p>
+
+<h2>Step 4: Validate before you send</h2>
+<p>A quote you cannot defend is worse than no quote. Before it goes out, check it two ways.</p>
+<p>Check it against the <strong>live carrier market</strong>: what would it actually cost to cover this lane right now? Your customer price has to sit comfortably above that, or you have no margin and possibly a loss. Check it against your <strong>own history</strong>: does this number make sense next to what you have charged on similar lanes? If today's quote is wildly off your past prices for the same kind of move, something in the inputs is wrong, and it is worth a second look before the customer finds it for you.</p>
+<p>When a quote clears both checks, it survives the conversation. The customer can push, and every piece of your number traces back to a real input you can point to: real anchor cost, real regional diesel, real load math, a stated margin. That is what credibility on a pricing call actually is.</p>
+
+<h2>Why this beats a spreadsheet</h2>
+<p>A pricing spreadsheet fails slowly, in ways that are easy to miss. The fuel assumptions go stale. It uses one national diesel number. It does not know how many vehicles shared the load. And re-pricing a whole book of old lanes by hand is hours nobody has, so it never happens and the dormant customers never get called. The method above is not hard, it is just tedious to do by hand at scale, which is the entire reason I built a tool to run it across a whole order history at once.</p>
+
+<div class="cta"><h3>See your own lanes priced this way</h3><p>Book a 15-minute demo and we'll run this method on your real order history.</p>
+<a href="https://calendly.com/julie-ratebot" rel="noopener">Book a 15-minute demo</a></div>
+
+<div class="faq"><h2>Frequently asked questions</h2>
+<details><summary>How do auto transport brokers price a lane?</summary><p>Start from a real cost for the lane, usually your own historical carrier cost or the current market rate, adjust it for today's regional diesel with the fuel shared across the carrier's full load, then apply your target margin to get the customer price. Validate against a live carrier rate and your own history before you send it.</p></details>
+<details><summary>What margin should an auto transport broker target?</summary><p>It varies by lane and season, but a common working target is around a 35 percent spread, meaning the carrier buys at roughly 65 percent of the customer price. Treat it as a target, not a guarantee. On tight lanes the live carrier rate can run higher, which is exactly when you cross-check the market before quoting.</p></details>
+<details><summary>Should I use national or regional diesel to price a lane?</summary><p>Regional. Diesel is not one national number. California routinely runs well above the Gulf Coast, so pricing a West Coast lane off a national average understates the fuel cost every time. Price each lane on the diesel of the region it originates in.</p></details>
+</div>
+
+<div class="author"><div class="ini">JJ</div><div><h4>Julie James, Founder of RateBot</h4><p>Julie has spent 11 years in auto transport and has moved more than 20,000 vehicles. She built RateBot to re-price lanes the way an operator actually does it, so brokers can re-quote dormant customers with numbers that hold up.</p></div></div>
+
+<div class="related"><h3>Keep reading</h3>
+<a href="/blog/diesel-prices-auto-transport-rates.html">How Diesel Prices Change Your Auto Transport Rates</a>
+<a href="/blog/win-back-dormant-auto-transport-customers.html">How to Win Back Dormant Auto Transport Customers</a>
+<a href="/blog/auto-transport-broker-pricing-tool-build-vs-buy.html">Auto Transport Broker Pricing Tools: Build vs Buy</a></div>
+</article>
+</div>
+<footer class="site"><div class="row">
+<div><div class="logo">Rate<span style="color:#5fd39e">Bot</span></div>
+<div style="margin-top:6px">Fuel-smart lane re-quoting for auto transport brokers.</div></div>
+<div style="text-align:right"><a href="/">Home</a> &middot; <a href="/blog/">Blog</a> &middot; <a href="https://calendly.com/julie-ratebot" rel="noopener">Book a demo</a>
+<div style="margin-top:8px;font-size:11.5px;color:#67809a">Diesel data: U.S. Energy Information Administration. &copy; 2026 RateBot.</div></div>
+</div></footer>
+<script>(function(){if(window.matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;var sel='article > h2, article > .cta, article > .faq, article > .related, article > .author';var t=[].slice.call(document.querySelectorAll(sel));t.forEach(function(e){e.classList.add('reveal');});var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});t.forEach(function(e){io.observe(e);});})();</script></body></html>
